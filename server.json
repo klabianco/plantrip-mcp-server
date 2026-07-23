@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.plantrip/plantrip",
+  "description": "Travel planning: day-by-day itineraries, packing lists, weather insights, and trip cost estimates",
+  "repository": {
+    "url": "https://github.com/klabianco/plantrip-mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "websiteUrl": "https://plantrip.io/developers",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "plantrip-mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PLANTRIP_API_KEY",
+          "description": "Free API key from https://plantrip.io/developers",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
